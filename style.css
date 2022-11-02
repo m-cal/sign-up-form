@@ -1,3 +1,49 @@
 body {
   background-color: lightblue;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.right {
+  width: 70vw;
+  height: 100vh;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 30vw;
+  min-width: 250px;
+  height: 100vh;
+  background-color: lightcoral;
+}
+
+.top {
+  height: 33.333%;
+  width: 100%;
+  background-color: red;
+  /* flex: 1; */
+}
+
+.middle {
+  height: 33.333%;
+  width: 100%;
+  background-color: white;
+  /* flex: 1; */
+}
+
+.bottom {
+  height: 33.333%;
+  width: 100%;
+  background-color: blue;
+  /* flex: 1; */
 }

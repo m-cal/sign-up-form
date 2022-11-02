@@ -133,16 +133,16 @@ input {
 
 
 ::-webkit-input-placeholder {
-  color: rgba(44, 140, 188, 0.758);
+  color:rgba(145, 160, 167, 0.758)
 }
 ::-moz-placeholder {
-  color:rgba(44, 140, 188, 0.758);
+  color:rgba(145, 160, 167, 0.758)
 }
 :-ms-input-placeholder {
-  color:rgba(44, 140, 188, 0.758);
+  color:rgba(145, 160, 167, 0.758)
 }
 :-moz-placeholder {
-  color:rgba(44, 140, 188, 0.758);
+  color:rgba(145, 160, 167, 0.758);
 }
 
 .bottom > p {
@@ -166,8 +166,13 @@ input:hover {
   border-bottom: 6x solid violet;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:visited {
   color: violet;
+  text-decoration: none;
 }
 
 #mountain-svg {

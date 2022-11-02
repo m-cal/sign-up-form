@@ -122,9 +122,27 @@ button:hover {
 input {
   height: 18px;
   width: 200px;
-  border: 3px solid rgb(41, 134, 234);
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  border: none;
+  border-bottom: 4px solid rgb(41, 134, 234);
+  background-color: #333333;
+  color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+
+
+::-webkit-input-placeholder {
+  color: rgba(44, 140, 188, 0.758);
+}
+::-moz-placeholder {
+  color:rgba(44, 140, 188, 0.758);
+}
+:-ms-input-placeholder {
+  color:rgba(44, 140, 188, 0.758);
+}
+:-moz-placeholder {
+  color:rgba(44, 140, 188, 0.758);
 }
 
 .bottom > p {
@@ -145,7 +163,7 @@ form {
 }
 
 input:hover {
-  border: 4px solid black;
+  border-bottom: 6x solid violet;
 }
 
 a:visited {

@@ -6,18 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <script src="./script.js" defer></script>
 </head>
 <body>
   <div class="container">
     <div class="left">
-
+      <div class="banner">
+        <h1>Odin</h1>
+      </div>
     </div>
 
     <div class="right">
-      <div class="top"></div>
-      <div class="middle"></div>
-      <div class="bottom"></div>
+      <div class="top">
+        <h2>This is not a real oneline service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+        <h2>You <em>know</em> you want to.</h2>
+      </div>
+      <div class="middle">
+        <h1>Let's do this!</h1>
+        <form action="http://httpbin.org/post" method="post">
+            <label for="">First Name</label>
+            <input type="text">
+            <label for="">Last Name</label>
+            <input type="text"><br>
+
+            <label for="">Email</label>
+            <input type="text">
+            <label for="">Phone Number</label>
+            <input type="text"><br>
+
+            <label for="">Password</label>
+            <input type="text">
+            <label for="">Confirm Password</label>
+            <input type="text"><br>
+        </form>
+      </div>
+      <div class="bottom">
+        <button>Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
     </div>
   </div>
 </body>

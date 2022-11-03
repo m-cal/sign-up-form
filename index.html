@@ -29,7 +29,7 @@
       </div>
       <div class="middle">
         <h1>Let's do this!</h1>
-        <form action="http://httpbin.org/post" method="post">
+        <form action="http://httpbin.org/post" method="post" id="form">
           <div class="left-forms">
             <label for="">First Name</label>
             <input type="text" placeholder="John">
@@ -53,7 +53,7 @@
         </form>
       </div>
       <div class="bottom">
-        <button>Create Account</button>
+        <input type="submit" form="form" id="submit-button" value="Create Account"></input>
         <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>

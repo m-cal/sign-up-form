@@ -55,8 +55,10 @@ body {
   width: 100%;
   background-color: #333333;
   border: 10px red;
-  box-shadow: 0 0 15px 6px rgb(54, 52, 52);
+  box-shadow: 0px 1px 5px 8px rgb(0, 0, 0);
   border-top: 5px solid rgba(65, 90, 119, 50%);
+  border-bottom: 5px solid rgba(65, 90, 119, 50%);
+  z-index: 1000;
 }
 
 .bottom {
@@ -65,7 +67,6 @@ body {
   height: 35%;
   width: 100%;
   background-color: #1e1e1e;
-  border-top: 5px solid rgba(65, 90, 119, 80%);
 }
 
 .banner {
@@ -83,7 +84,7 @@ body {
   text-shadow: 2px 2px 2px black;
 }
 
-button {
+#submit-button {
   width: 200px;
   height: 50px;
   font-family: 'Montserrat', sans-serif;
@@ -94,7 +95,7 @@ button {
   border-radius: 8px;
 }
 
-button:hover {
+#submit-button:hover {
   background-color: rgb(0, 170, 255);
   color: black;
   border: 3px solid black;
@@ -104,15 +105,13 @@ button:hover {
   display: inline-flex;
   flex-direction: column;
   gap: 8px;
-  width: 20%;
-  min-width: 20%;
+  margin-right: 100px;
 }
 
 .right-forms {
   display: inline-flex;
   flex-direction: column;
   gap: 8px;
-  width: 49%;
 }
 
 .top > *, .middle > *, .bottom > * {
@@ -178,4 +177,10 @@ a:visited {
 #mountain-svg {
   width: 8rem;
   height: 8rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .left-forms {
+    margin-right: 10px;
+  }
 }

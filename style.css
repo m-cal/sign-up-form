@@ -58,7 +58,7 @@ body {
   box-shadow: 0px 1px 5px 8px rgb(0, 0, 0);
   border-top: 5px solid rgba(65, 90, 119, 50%);
   border-bottom: 5px solid rgba(65, 90, 119, 50%);
-  z-index: 1000;
+  z-index: 100;
 }
 
 .bottom {
@@ -95,7 +95,7 @@ body {
   border-radius: 8px;
 }
 
-#submit-button:hover {
+#submit-button:hover, #submit-button:focus {
   background-color: rgb(0, 170, 255);
   color: black;
   border: 3px solid black;
@@ -129,7 +129,22 @@ input {
   font-size: 1rem;
 }
 
+:focus {
+  border: none;
+}
 
+input:invalid:focus {
+  border: red 3px solid;
+}
+
+input:hover, input:focus {
+  border-bottom: 6px solid violet;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 5px 4px 5px 0px #000000;
+}
 
 ::-webkit-input-placeholder {
   color:rgba(145, 160, 167, 0.758)
@@ -159,10 +174,6 @@ input {
 form {
   display: flex;
   gap: 20px;
-}
-
-input:hover {
-  border-bottom: 6x solid violet;
 }
 
 a {

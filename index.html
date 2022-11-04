@@ -31,24 +31,24 @@
         <h1>Let's do this!</h1>
         <form action="http://httpbin.org/post" method="post" id="form">
           <div class="left-forms">
-            <label for="first-name">First Name</label>
-            <input type="text" placeholder="John" id="first-name">
+            <label for="first-name">*First Name</label>
+            <input type="text" placeholder="John" id="first-name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
 
-            <label for="email">Email</label>
-            <input type="text" placeholder="jdoe@something.com" id="email">
+            <label for="email">*Email</label>
+            <input type="email" placeholder="jdoe@something.com" id="email" required>
 
-            <label for="password">Password</label>
-            <input type="text" placeholder="12345" id="password">
+            <label for="password">*Password</label>
+            <input type="password" placeholder="aBcd1234" id="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
           </div>
           <div class="right-forms">
-            <label for="last-name">Last Name</label>
-            <input type="text" placeholder="Doe" id="last-name">
+            <label for="last-name">*Last Name</label>
+            <input type="text" placeholder="Doe" id="last-name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
 
-            <label for="phone-number">Phone Number</label>
-            <input type="text" placeholder="(123)-456-7890" id="phone-number">
+            <label for="phone-number">*Phone Number</label>
+            <input type="tel" placeholder="123-456-7890" id="phone-number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
-            <label for="confirm-password">Confirm Password</label>
-            <input type="text" placeholder="12345" id="confirm-password">
+            <label for="confirm-password">*Confirm Password</label>
+            <input type="password" placeholder="aBcd1234" id="confirm-password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
           </div>
         </form>
       </div>
